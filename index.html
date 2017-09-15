@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yearbooks</title>
+    <link href="jtc_base.css" rel="stylesheet"/>
+    <link href="jtc_layout.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+        </ul>
+      </nav>
+      <iframe src="https://www.youtube.com/embed/FidbjRIMIjQ" frameborder="1" allowfullscreen></iframe>
+    </header>
+    <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<br>
+<a class="twitter-timeline" data-width="250" data-height="400" data-link-color="#E81C4F" href="https://twitter.com/DavenportWest">Tweets by Davenport West</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <footer>
+      Our social media cites:
+      <a href="http://www.youtube.com"><i class="fa fa-youtube-play fa-2x" aria-hidden="true" style="color:red;"></i></a>
+      <a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color:dodgerblue;"></i></a>
+      <a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color:midnightblue;"></i></a>
+    </footer>
+  </body>
+</html>
