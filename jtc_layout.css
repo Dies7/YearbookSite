@@ -15,8 +15,6 @@
 	unless superceded by other styles.
    =============================================
 */
-
-
 html {
 	height: 100%;
 	margin: 0; padding: 0; border: 0;
@@ -36,9 +34,10 @@ body > header nav {
 	display: block;
 	text-align: right;
 	width: 100%;
-	height: 28px;
-	background-color: #d10202;
+	height: 200px;
 	border-bottom: 2px solid #0084bf;
+	background: linear-gradient(to right, transparent, red),
+      url("images/westfalconb.jpg");
 }
 
 body > header > nav ul li {
@@ -121,11 +120,17 @@ body > img {
 
 footer {
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	text-align: center;
+	text-align: left;
 	font-size: 0.7em;
 	border-top: 2px solid #d10202;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	display: block;
+	width: 100%;
+	height: 120px;
+	background-color: #d10202;
+	border-bottom: 2px solid #0084bf;
+	color: #EFEFEF;
 }
 
 /* =============================================
@@ -220,15 +225,15 @@ footer {
 @media only screen and (min-width: 769px) {
 
 html {
-	background-color: #c61515;
+	background-color: #fffff;
 }
 
 body {
 	width: 90%;
 	max-width: 1020px;
-	-moz-box-shadow: rgba(153, 3, 3, 1) 20px 0px 25px,  rgba(153, 3, 3, 1) -20px 0px 25px;
-	-webkit-box-shadow: rgba(153, 3, 3, 1) 20px 0px 25px,  rgba(153, 3, 3, 1) -20px 0px 25px;
-	box-shadow: rgba(86, 0, 0, 1) 20px 0px 25px,  rgba(86, 0, 0, 1) -20px 0px 25px;
+	-moz-box-shadow: rgba(214, 4, 4, 0.9) 20px 0px 25px,  rgba(214, 4, 4, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(193, 3, 3, 0.9) 20px 0px 25px,  rgba(193, 3, 3, 0.9) -20px 0px 25px;
+	box-shadow: rgba(86, 0, 0, 0.9) 20px 0px 25px,  rgba(86, 0, 0, 0.9) -20px 0px 25px;
 }
 
 }
