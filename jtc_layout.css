@@ -30,14 +30,16 @@ body {
 }
 
 
-body > header nav {
+header{
 	display: block;
 	text-align: right;
 	width: 100%;
 	height: 200px;
 	border-bottom: 2px solid #0084bf;
-	background: linear-gradient(to right, transparent, red),
-      url("images/westfalconb.jpg");
+	background-position: left top;
+	background: linear-gradient(to right, transparent, red),url("images/westfalconb.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 
 body > header > nav ul li {
@@ -120,17 +122,21 @@ body > img {
 
 footer {
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
-	text-align: left;
 	font-size: 0.7em;
 	border-top: 2px solid #d10202;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	display: block;
 	width: 100%;
-	height: 120px;
+	height: 60px;
 	background-color: #d10202;
 	border-bottom: 2px solid #0084bf;
 	color: #EFEFEF;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
 /* =============================================
